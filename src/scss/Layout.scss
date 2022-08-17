@@ -1,0 +1,71 @@
+@import "./variables.scss";
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include breakpoint(sm) {
+        max-width: 540px;
+    }
+}
+
+.info-dates {
+    max-width: 70%;
+    margin: 10px 5px 0px 10px;
+    padding-top: 20px;
+    position: relative;
+    left: 85px;
+    @media (max-width: 768px) {
+        min-width: 85%;
+        margin: 10px 10px 30px 27px;
+        display: block;
+        left: 0px;
+    }
+}
+
+.empty {
+    height: 300px;
+}
+
+.box-stepper {
+    width: 100%;
+    padding: 0px 15px 0px 15px;
+    margin: 30px 0px 0px 0px;
+    @media (max-width: 768px) {
+       padding: 0px;
+       margin: 0px;
+    }
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px 15px 57px;
+    width: 92%;
+    @media (max-width: 768px) {
+        width: 100%;
+        justify-content: space-between;
+        display: inline-table;
+    }
+}
+
+#btn1 {
+    color: $completed;
+    border: 0px solid transparent;
+    background: transparent;
+}
+
+#btn2 {
+    background: $grey;
+    color: $light;
+    border: 1px solid $light;
+    font-size: 11px !important;
+    padding: 8px 25px;
+}
+
+.icono {
+    margin-right: 10px;
+}

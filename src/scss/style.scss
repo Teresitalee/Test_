@@ -1,0 +1,43 @@
+@import "./variables.scss";
+@import "./Layout.scss";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    font-family: $Poppins;
+    color: $dark;
+    background-color: $body;
+    margin: 0;
+    min-height: 100vh;
+}
+
+#root {
+    height: 100%;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    padding-top: 20px;
+    color: $text;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    line-height: 26px;
+}
+
+p {
+    font-size: 16px;
+    color: $text;
+    font-weight: 400;
+    text-align: left;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    line-height: 22px;
+}
+
+.empty {
+    height: 300px;
+}

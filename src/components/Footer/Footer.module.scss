@@ -1,0 +1,71 @@
+@import "src/scss/variables.scss";
+
+.foot {
+    background: $footer;
+    width: 100%; 
+    color: $light;
+    padding: 1%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    height: 116px;
+    @media (max-width: 768px) {
+       height: auto;
+       display: block;
+       height: 255px;
+    }
+
+    .content {
+        display: inline-flex;
+        width: 100%;
+        position: relative;
+        top: 20px;
+        justify-content: space-around;
+        @media (max-width: 768px) {
+            margin: auto;
+            display: block;
+            text-align: center;
+         }
+
+        .box1 {
+            width: 35%;
+            display: inline-flex;
+
+            @media (max-width: 768px) {
+               margin: auto;
+               display: block;
+               width: 100%;
+               text-align: center;
+            }
+
+            .calidad {
+                margin-left: 25px;
+                @media (max-width: 768px) {
+                    margin-top: 20px;
+                }
+            }
+        }
+        .box2 {
+            width: 35%;
+            display: inline-flex;
+            @media (max-width: 768px) {
+                margin: auto;
+                display: block;
+                width: 100%;
+                text-align: center;
+                padding: 23px;
+             }
+        }
+
+        p {
+            color: $light;
+        }
+    }
+
+    img {
+        @media (max-width: 768px) {
+            width: 50%;
+            height: 70px;
+        }
+    }
+}

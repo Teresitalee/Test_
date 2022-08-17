@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+$Poppins: "Poppins", sans-serif;
+
+// colors
+$dark: rgb(29, 29, 29);
+$light: #fff;
+$primary: #7B2084;
+$text: #383838;
+$bg: rgb(244, 244, 255);
+$box: #ffed66;
+$completed: #E81E2B;
+$grey: #D4D4D4;
+$footer: #646569;
+$body: #F8F8F8;
+
+// spacing
+$spacing-md: 16px;
+$spacing-lg: 32px;
+
+// border radius
+$borderRadius: 12px;
+
+// header height
+$headerHeight: 100px;
+
+@mixin breakpoint($point) {
+    @if $point == md {
+        // 768px
+        @media (min-width: 48em) {
+            @content;
+        }
+    }
+}
